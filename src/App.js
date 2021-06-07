@@ -1,4 +1,4 @@
-import { Route, Switch } from 'react-router';
+import { Route, Switch } from 'react-router-dom';
 
 import './App.css';
 import Header from './components/header/header.component';
@@ -15,9 +15,9 @@ function App() {
       <Switch>
         <Route exact path="/" component={HomePage} />
         <Route path="/shop" component={ShopPage} />
-        <Route path="/checkout" component={Checkout} />
-        <Route path="/sign-in" component={SignIn} />
-        <Route path="/sign-up" component={SignUp} />
+        <Route exact path="/checkout" component={Checkout} />
+        <Route exact path="/sign-in" component={SignIn} />
+        <Route exact path="/sign-up" component={SignUp} />
       </Switch>
     </div>
   );
